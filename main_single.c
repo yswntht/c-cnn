@@ -455,9 +455,10 @@ int main(int argc,char *argv[])
         correct_cnt=0;
         avg_error=0;
 
-        for(int j=0;j<TEST_NUM;j++)
+        for(int j=0;j<1;j++)
         {
-            set_input(j,test_image);
+            // set_input(j,test_image);
+            set_input_cmd(cmd_image);
             input_conv();
             conv_pool();
             pool_fc1();
